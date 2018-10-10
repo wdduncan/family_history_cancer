@@ -1,0 +1,2128 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://purl.roswellpark.org/ontology/ncit_family_branch_import.owl#"
+     xml:base="http://purl.roswellpark.org/ontology/ncit_family_branch_import.owl"
+     xmlns:obo="http://purl.obolibrary.org/obo/"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:protege="http://protege.stanford.edu/plugins/owl/protege#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
+    <owl:Ontology rdf:about="http://purl.roswellpark.org/ontology/ncit_family_branch_import.owl"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/NCIT_P325">
+        <rdfs:label>ALT_DEFINITION</rdfs:label>
+        <obo:IAO_0000115>English language definitions of what a source other than NCI means by the concept. These are limited to 1024 characters. They include information about the definition&#39;s source in a form that can easily be interpreted by software.</obo:IAO_0000115>
+        <obo:NCIT_P108>ALT_DEFINITION</obo:NCIT_P108>
+        <obo:NCIT_P107>[source] Definition</obo:NCIT_P107>
+        <oboInOwl:hasExactSynonym>ALT_DEFINITION</oboInOwl:hasExactSynonym>
+        <obo:NCIT_P106>Conceptual Entity</obo:NCIT_P106>
+        <obo:NCIT_NHC0>P325</obo:NCIT_NHC0>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/NCIT_P366">
+        <rdfs:label>Legacy_Concept_Name</rdfs:label>
+        <protege:readOnly>true</protege:readOnly>
+        <obo:IAO_0000115>A retired unique concept identifier created and stored as Concept Name by legacy EVS software.  Use of these values was long discouraged, but continued as late as 2009 when creation of new values ceased and Concept Name was retired.  Legacy values are intended solely to help resolve and update earlier coding.</obo:IAO_0000115>
+        <obo:NCIT_P106>Conceptual Entity</obo:NCIT_P106>
+        <obo:NCIT_NHC0>P366</obo:NCIT_NHC0>
+        <obo:NCIT_P108>Legacy Concept Name</obo:NCIT_P108>
+        <oboInOwl:hasExactSynonym>Legacy Concept Name</oboInOwl:hasExactSynonym>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#inSubset">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">in subset</rdfs:label>
+        <oboInOwl:hasExactSynonym>Concept_In_Subset</oboInOwl:hasExactSynonym>
+        <obo:IAO_0000115>Used to associate the concept defining a particular terminology subset with concepts that belong to this subset.</obo:IAO_0000115>
+    </owl:AnnotationProperty>
+    <rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#label">
+        <rdfs:label>label</rdfs:label>
+    </rdf:Description>
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/NCIT_P107">
+        <rdfs:label>Display_Name</rdfs:label>
+        <obo:NCIT_P106>Conceptual Entity</obo:NCIT_P106>
+        <obo:NCIT_P108>Display_Name</obo:NCIT_P108>
+        <obo:NCIT_NHC0>P107</obo:NCIT_NHC0>
+        <oboInOwl:hasExactSynonym>Display Name</oboInOwl:hasExactSynonym>
+        <obo:IAO_0000115>Provides an alternative Preferred Name for use in some NCI systems.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym>Display_Name</oboInOwl:hasExactSynonym>
+        <obo:NCIT_P107>Display Name</obo:NCIT_P107>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/NCIT_P108">
+        <rdfs:label>Preferred_Name</rdfs:label>
+        <oboInOwl:hasExactSynonym>Preferred Name</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>Preferred Term</oboInOwl:hasExactSynonym>
+        <obo:NCIT_P107>Preferred Name</obo:NCIT_P107>
+        <obo:IAO_0000115>The word or phrase that NCI uses by preference to refer to the concept.</obo:IAO_0000115>
+        <obo:NCIT_NHC0>P108</obo:NCIT_NHC0>
+        <obo:NCIT_P106>Conceptual Entity</obo:NCIT_P106>
+        <oboInOwl:hasExactSynonym>Preferred_Name</oboInOwl:hasExactSynonym>
+        <obo:NCIT_P108>Preferred_Name</obo:NCIT_P108>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/NCIT_P207">
+        <rdfs:label>UMLS_CUI</rdfs:label>
+        <obo:NCIT_P106>Conceptual Entity</obo:NCIT_P106>
+        <obo:NCIT_P108>UMLS_CUI</obo:NCIT_P108>
+        <obo:IAO_0000115>Concept Unique Identifiers, or CUIs, are concept numbers assigned by the National Library of Medicine (NLM). If a concept in any NCI-maintained knowledgebase exists in the NLM Unified Medical Language System (UMLS), NCI includes the NLM CUI among the information we provide about the concept.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym>UMLS_CUI</oboInOwl:hasExactSynonym>
+        <obo:NCIT_NHC0>P207</obo:NCIT_NHC0>
+        <obo:NCIT_P107>UMLS CUI</obo:NCIT_P107>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has exact synonym</rdfs:label>
+        <obo:IAO_0000115>Fully qualified synonym, contains the string, term type, source, and an optional source code if appropriate. Each subfield is deliniated to facilitate interpretation by software.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym>Synonym with Source Data</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>FULL_SYN</oboInOwl:hasExactSynonym>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/NCIT_P106">
+        <rdfs:label>Semantic_Type</rdfs:label>
+        <obo:NCIT_P106>Conceptual Entity</obo:NCIT_P106>
+        <oboInOwl:hasExactSynonym>Semantic_Type</oboInOwl:hasExactSynonym>
+        <obo:NCIT_NHC0>P106</obo:NCIT_NHC0>
+        <obo:NCIT_P107>Semantic Type</obo:NCIT_P107>
+        <obo:NCIT_P108>Semantic_Type</obo:NCIT_P108>
+        <obo:NCIT_P98>In general, applying semantic types aids in allowing users (or computer programs) to draw conclusions about concepts by virtue of the categories to which they have been assigned.  We use a set of semantic types developed for the UMLS Metathesaurus. There are currently 134 semantic types in the UMLS.</obo:NCIT_P98>
+        <obo:IAO_0000115>The semantic type describes the sort of thing or category to which a concept belongs in the context of the UMLS semantic network.</obo:IAO_0000115>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/NCIT_P208">
+        <rdfs:label>NCI_META_CUI</rdfs:label>
+        <obo:NCIT_NHC0>P208</obo:NCIT_NHC0>
+        <obo:NCIT_P107>NCI Metathesaurus CUI</obo:NCIT_P107>
+        <obo:NCIT_P108>NCI_META_CUI</obo:NCIT_P108>
+        <obo:NCIT_P106>Conceptual Entity</obo:NCIT_P106>
+        <oboInOwl:hasExactSynonym>NCI_META_CUI</oboInOwl:hasExactSynonym>
+        <obo:IAO_0000115>Contains a Concept Unique Identifier for those concepts that appear in NCI Metathesaurus but not in the NLM UMLS.</obo:IAO_0000115>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000115">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">definition</rdfs:label>
+        <oboInOwl:hasExactSynonym>DEFINITION</oboInOwl:hasExactSynonym>
+        <obo:IAO_0000115>English language definitions of what NCI means by the concept. These are limited to 1024 characters. They may also include information about the definition&#39;s source and attribution in a form that can easily be interpreted by software.</obo:IAO_0000115>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000412">
+        <rdfs:label xml:lang="en">imported from</rdfs:label>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://protege.stanford.edu/plugins/owl/protege#readOnly"/>
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/NCIT_NHC0">
+        <rdfs:label>code</rdfs:label>
+        <obo:NCIT_P108>code</obo:NCIT_P108>
+        <oboInOwl:hasExactSynonym>code</oboInOwl:hasExactSynonym>
+        <protege:readOnly>true</protege:readOnly>
+        <obo:NCIT_NHC0>NHC0</obo:NCIT_NHC0>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/NCIT_P98">
+        <rdfs:label>DesignNote</rdfs:label>
+        <obo:NCIT_P106>Conceptual Entity</obo:NCIT_P106>
+        <obo:NCIT_P107>DesignNote</obo:NCIT_P107>
+        <obo:NCIT_NHC0>P98</obo:NCIT_NHC0>
+        <obo:IAO_0000115>Design notes are notations made by NCI vocabulary curators. They are intended to provide supplemental, unstructured information to the user or additional insight about the concept.</obo:IAO_0000115>
+        <obo:NCIT_P108>DesignNote</obo:NCIT_P108>
+        <oboInOwl:hasExactSynonym>DesignNote</oboInOwl:hasExactSynonym>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/NCIT_P322">
+        <rdfs:label>Contributing_Source</rdfs:label>
+        <obo:NCIT_P106>Conceptual Entity</obo:NCIT_P106>
+        <obo:NCIT_P108>Contributing_Source</obo:NCIT_P108>
+        <obo:NCIT_NHC0>P322</obo:NCIT_NHC0>
+        <obo:IAO_0000115>This property is used to indicate when a non-EVS entity has contributed to, and has a stake in, a concept.  This is used where such entities, within or outside NCI, have indicated the need to be able to track their own concepts. A single concept can have multiple instances of this property if multiple entities have such a defined stake.</obo:IAO_0000115>
+        <obo:NCIT_P107>Contributing Source</obo:NCIT_P107>
+        <oboInOwl:hasExactSynonym>Contributing_Source</oboInOwl:hasExactSynonym>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Datatypes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_C100805 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C100805">
+        <rdfs:label>Biological Grandchild</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C71397"/>
+        <oboInOwl:hasExactSynonym>Biological Grandchild</oboInOwl:hasExactSynonym>
+        <obo:NCIT_P322>CDISC</obo:NCIT_P322>
+        <obo:NCIT_P108>Biological Grandchild</obo:NCIT_P108>
+        <obo:NCIT_P106>Human</obo:NCIT_P106>
+        <obo:NCIT_P325>A biological child of an individual&#39;s biological child.</obo:NCIT_P325>
+        <obo:NCIT_NHC0>C100805</obo:NCIT_NHC0>
+        <oboInOwl:hasExactSynonym>GRANDCHILD, BIOLOGICAL</oboInOwl:hasExactSynonym>
+        <obo:NCIT_P207>C3639748</obo:NCIT_P207>
+        <obo:IAO_0000115>A biological child of an individual&#39;s biological child.</obo:IAO_0000115>
+        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C100130"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C61410"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C66830"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ncit.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_C100806 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C100806">
+        <rdfs:label>Biological Grandparent</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C71385"/>
+        <obo:NCIT_P322>CDISC</obo:NCIT_P322>
+        <obo:NCIT_NHC0>C100806</obo:NCIT_NHC0>
+        <oboInOwl:hasExactSynonym>Biological Grandparent</oboInOwl:hasExactSynonym>
+        <obo:NCIT_P108>Biological Grandparent</obo:NCIT_P108>
+        <obo:NCIT_P106>Human</obo:NCIT_P106>
+        <obo:IAO_0000115>A biological parent of the biological father or biological mother.</obo:IAO_0000115>
+        <obo:NCIT_P325>A biological parent of the biological father or biological mother.</obo:NCIT_P325>
+        <obo:NCIT_P207>C0337472</obo:NCIT_P207>
+        <oboInOwl:hasExactSynonym>GRANDPARENT, BIOLOGICAL</oboInOwl:hasExactSynonym>
+        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C100130"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C61410"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C66830"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ncit.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_C100807 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C100807">
+        <rdfs:label>Biological Child</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C42708"/>
+        <obo:NCIT_P108>Biological Child</obo:NCIT_P108>
+        <obo:IAO_0000115>A son or daughter with genetic makeup inherited from the parent.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym>Biological Child</oboInOwl:hasExactSynonym>
+        <obo:NCIT_NHC0>C100807</obo:NCIT_NHC0>
+        <obo:NCIT_P207>C0337540</obo:NCIT_P207>
+        <obo:NCIT_P106>Human</obo:NCIT_P106>
+        <obo:NCIT_P322>CDISC</obo:NCIT_P322>
+        <obo:NCIT_P325>A son or daughter with genetic makeup inherited from the parent.</obo:NCIT_P325>
+        <oboInOwl:hasExactSynonym>CHILD, BIOLOGICAL</oboInOwl:hasExactSynonym>
+        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C100130"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C61410"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C66830"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ncit.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_C100808 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C100808">
+        <rdfs:label>Third Degree Relative</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C21480"/>
+        <obo:IAO_0000115>Any individual related biologically or legally to another individual and considered two degrees removed from the immediate family as in the case of cousins.</obo:IAO_0000115>
+        <obo:NCIT_NHC0>C100808</obo:NCIT_NHC0>
+        <oboInOwl:hasExactSynonym>Third Degree Relative</oboInOwl:hasExactSynonym>
+        <obo:NCIT_P322>CDISC</obo:NCIT_P322>
+        <oboInOwl:hasExactSynonym>RELATIVE, THIRD DEGREE</oboInOwl:hasExactSynonym>
+        <obo:NCIT_P207>C3639750</obo:NCIT_P207>
+        <obo:NCIT_P325>Any individual related biologically or legally to another individual and considered two degrees removed from the immediate family as in the case of cousins.</obo:NCIT_P325>
+        <obo:NCIT_P108>Third Degree Relative</obo:NCIT_P108>
+        <obo:NCIT_P106>Human</obo:NCIT_P106>
+        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C100130"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C61410"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C66830"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ncit.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_C100809 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C100809">
+        <rdfs:label>Biological Sibling</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C25204"/>
+        <obo:NCIT_P108>Biological Sibling</obo:NCIT_P108>
+        <obo:NCIT_NHC0>C100809</obo:NCIT_NHC0>
+        <obo:NCIT_P106>Human</obo:NCIT_P106>
+        <oboInOwl:hasExactSynonym>SIBLING, BIOLOGICAL</oboInOwl:hasExactSynonym>
+        <obo:NCIT_P207>C0337502</obo:NCIT_P207>
+        <obo:NCIT_P322>CDISC</obo:NCIT_P322>
+        <obo:IAO_0000115>A person&#39;s brother or sister with whom they share a genetic makeup inherited from one or both of their shared biological parents.</obo:IAO_0000115>
+        <obo:NCIT_P325>A person&#39;s brother or sister with whom they share a genetic makeup inherited from their shared biological parents.</obo:NCIT_P325>
+        <oboInOwl:hasExactSynonym>Biological Sibling</oboInOwl:hasExactSynonym>
+        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C100130"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C61410"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C66830"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ncit.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_C111201 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C111201">
+        <rdfs:label>Full Brother</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C71390"/>
+        <obo:NCIT_P322>CDISC</obo:NCIT_P322>
+        <oboInOwl:hasExactSynonym>Full Brother</oboInOwl:hasExactSynonym>
+        <obo:NCIT_P108>Full Brother</obo:NCIT_P108>
+        <obo:IAO_0000115>A male who shares with his sibling the genetic makeup inherited from both of the biological parents.</obo:IAO_0000115>
+        <obo:NCIT_P207>C3830065</obo:NCIT_P207>
+        <obo:NCIT_NHC0>C111201</obo:NCIT_NHC0>
+        <oboInOwl:hasExactSynonym>BROTHER, FULL</oboInOwl:hasExactSynonym>
+        <obo:NCIT_P325>A male who shares with his sibling the genetic makeup inherited from both of the biological parents.</obo:NCIT_P325>
+        <obo:NCIT_P106>Human</obo:NCIT_P106>
+        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C100130"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C61410"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C66830"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ncit.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_C111202 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C111202">
+        <rdfs:label>Full Sister</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C71390"/>
+        <obo:NCIT_P207>C3827310</obo:NCIT_P207>
+        <obo:NCIT_P108>Full Sister</obo:NCIT_P108>
+        <obo:NCIT_P322>CDISC</obo:NCIT_P322>
+        <obo:IAO_0000115>A female who shares with her sibling the genetic makeup inherited from both of the biological parents.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym>Full Sister</oboInOwl:hasExactSynonym>
+        <obo:NCIT_P325>A female who shares with her sibling the genetic makeup inherited from both of the biological parents.</obo:NCIT_P325>
+        <obo:NCIT_NHC0>C111202</obo:NCIT_NHC0>
+        <obo:NCIT_P106>Human</obo:NCIT_P106>
+        <oboInOwl:hasExactSynonym>SISTER, FULL</oboInOwl:hasExactSynonym>
+        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C100130"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C61410"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C66830"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ncit.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_C111248 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C111248">
+        <rdfs:label>Maternal Biological Grandparent</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C100806"/>
+        <oboInOwl:hasExactSynonym>Maternal Biological Grandparent</oboInOwl:hasExactSynonym>
+        <obo:NCIT_P325>A relative who is the biological parent of the biological mother.</obo:NCIT_P325>
+        <obo:IAO_0000115>A relative who is the biological parent of the biological mother.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym>GRANDPARENT, BIOLOGICAL MATERNAL</oboInOwl:hasExactSynonym>
+        <obo:NCIT_P106>Human</obo:NCIT_P106>
+        <obo:NCIT_P207>C3829175</obo:NCIT_P207>
+        <obo:NCIT_P322>CDISC</obo:NCIT_P322>
+        <obo:NCIT_P108>Maternal Biological Grandparent</obo:NCIT_P108>
+        <obo:NCIT_NHC0>C111248</obo:NCIT_NHC0>
+        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C100130"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C61410"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C66830"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ncit.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_C111286 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C111286">
+        <rdfs:label>Paternal Biological Grandparent</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C100806"/>
+        <obo:NCIT_P207>C3828639</obo:NCIT_P207>
+        <obo:NCIT_P325>A relative who is the biological parent of the biological father.</obo:NCIT_P325>
+        <oboInOwl:hasExactSynonym>GRANDPARENT, BIOLOGICAL PATERNAL</oboInOwl:hasExactSynonym>
+        <obo:IAO_0000115>A relative who is the biological parent of the biological father.</obo:IAO_0000115>
+        <obo:NCIT_P106>Human</obo:NCIT_P106>
+        <obo:NCIT_NHC0>C111286</obo:NCIT_NHC0>
+        <oboInOwl:hasExactSynonym>Paternal Biological Grandparent</oboInOwl:hasExactSynonym>
+        <obo:NCIT_P108>Paternal Biological Grandparent</obo:NCIT_P108>
+        <obo:NCIT_P322>CDISC</obo:NCIT_P322>
+        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C100130"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C61410"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C66830"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ncit.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_C119265 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C119265">
+        <rdfs:label>Significant Other</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C41256"/>
+        <oboInOwl:hasExactSynonym>Significant Other</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>SIGNIFICANT OTHER</oboInOwl:hasExactSynonym>
+        <obo:NCIT_P325>A gender-neutral term for a person&#39;s partner in an intimate or romantic relationship without disclosing or presuming marital status or sexual orientation.</obo:NCIT_P325>
+        <obo:NCIT_P108>Significant Other</obo:NCIT_P108>
+        <obo:NCIT_P207>C0682323</obo:NCIT_P207>
+        <obo:IAO_0000115>A gender-neutral term for a person&#39;s partner in an intimate or romantic relationship without disclosing or presuming marital status or sexual orientation.</obo:IAO_0000115>
+        <obo:NCIT_NHC0>C119265</obo:NCIT_NHC0>
+        <obo:NCIT_P106>Human</obo:NCIT_P106>
+        <obo:NCIT_P322>CDISC</obo:NCIT_P322>
+        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C61410"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C66830"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C78735"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ncit.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_C127782 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C127782">
+        <rdfs:label>Household Relative</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C21480"/>
+        <obo:NCIT_P322>CDISC</obo:NCIT_P322>
+        <obo:NCIT_P325>Any individual related biologically or legally to another individual and residing in the same residence.</obo:NCIT_P325>
+        <oboInOwl:hasExactSynonym>RELATIVE, HOUSEHOLD</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>Household Relative</oboInOwl:hasExactSynonym>
+        <obo:NCIT_P208>CL509453</obo:NCIT_P208>
+        <obo:NCIT_P108>Household Relative</obo:NCIT_P108>
+        <obo:IAO_0000115>Any individual who is related biologically or legally to another individual, and who resides in the same residence.</obo:IAO_0000115>
+        <obo:NCIT_NHC0>C127782</obo:NCIT_NHC0>
+        <obo:NCIT_P106>Human</obo:NCIT_P106>
+        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C100130"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C61410"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C66830"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ncit.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_C127783 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C127783">
+        <rdfs:label>Non-household Relative</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C21480"/>
+        <obo:NCIT_P322>CDISC</obo:NCIT_P322>
+        <oboInOwl:hasExactSynonym>RELATIVE, NON-HOUSEHOLD</oboInOwl:hasExactSynonym>
+        <obo:NCIT_P106>Human</obo:NCIT_P106>
+        <obo:NCIT_P108>Non-household Relative</obo:NCIT_P108>
+        <obo:NCIT_NHC0>C127783</obo:NCIT_NHC0>
+        <obo:NCIT_P208>CL509517</obo:NCIT_P208>
+        <obo:IAO_0000115>Any individual who is related biologically or legally to another individual, but who does not reside in the same residence.</obo:IAO_0000115>
+        <obo:NCIT_P325>Any individual related biologically or legally to another individual and not residing in the same residence.</obo:NCIT_P325>
+        <oboInOwl:hasExactSynonym>Non-household Relative</oboInOwl:hasExactSynonym>
+        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C100130"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C61410"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C66830"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ncit.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_C128668 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C128668">
+        <rdfs:label>Triplet</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C25204"/>
+        <obo:IAO_0000115>Any of three offspring born from the same pregnancy.</obo:IAO_0000115>
+        <obo:NCIT_P106>Human</obo:NCIT_P106>
+        <obo:NCIT_NHC0>C128668</obo:NCIT_NHC0>
+        <obo:NCIT_P207>C0041095</obo:NCIT_P207>
+        <obo:NCIT_P108>Triplet</obo:NCIT_P108>
+        <oboInOwl:hasExactSynonym>Triplet</oboInOwl:hasExactSynonym>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ncit.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_C132450 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C132450">
+        <rdfs:label>Stepmother</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C71395"/>
+        <obo:NCIT_P108>Stepmother</obo:NCIT_P108>
+        <obo:NCIT_P207>C0337488</obo:NCIT_P207>
+        <oboInOwl:hasExactSynonym>MOTHER, STEP</oboInOwl:hasExactSynonym>
+        <obo:NCIT_P322>CDISC</obo:NCIT_P322>
+        <oboInOwl:hasExactSynonym>Stepmother</oboInOwl:hasExactSynonym>
+        <obo:NCIT_NHC0>C132450</obo:NCIT_NHC0>
+        <obo:IAO_0000115>A female who is married to a spouse with children whom are not biologically related to her.</obo:IAO_0000115>
+        <obo:NCIT_P325>A female who has acquired children through marriage.</obo:NCIT_P325>
+        <obo:NCIT_P106>Human</obo:NCIT_P106>
+        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C100130"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C61410"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C66830"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ncit.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_C132451 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C132451">
+        <rdfs:label>Biological Relative, Paternal</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C71384"/>
+        <obo:NCIT_P322>CDISC</obo:NCIT_P322>
+        <obo:NCIT_P208>CL519686</obo:NCIT_P208>
+        <obo:IAO_0000115>Any individual related biologically to an individual&#39;s father.</obo:IAO_0000115>
+        <obo:NCIT_NHC0>C132451</obo:NCIT_NHC0>
+        <oboInOwl:hasExactSynonym>Biological Relative, Paternal</oboInOwl:hasExactSynonym>
+        <obo:NCIT_P108>Biological Relative, Paternal</obo:NCIT_P108>
+        <oboInOwl:hasExactSynonym>RELATIVE, BIOLOGICAL PATERNAL</oboInOwl:hasExactSynonym>
+        <obo:NCIT_P325>Any biological relative of an individual&#39;s biological father.</obo:NCIT_P325>
+        <obo:NCIT_P106>Human</obo:NCIT_P106>
+        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C100130"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C61410"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C66830"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ncit.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_C19811 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C19811">
+        <rdfs:label>Second Degree Relative</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C21480"/>
+        <obo:NCIT_NHC0>C19811</obo:NCIT_NHC0>
+        <obo:IAO_0000115>Any relative who is two meioses away from a particular individual in a family; a relative with whom one quarter of an individual&#39;s genes is shared (i.e., grandparent, grandchild, uncle, aunt, nephew, niece, half-sibling) (from Genetics Home Reference glossary)</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym>RELATIVE, SECOND DEGREE</oboInOwl:hasExactSynonym>
+        <obo:NCIT_P106>Human</obo:NCIT_P106>
+        <oboInOwl:hasExactSynonym>second-degree relative</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>SDR</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>Second Degree Relative</oboInOwl:hasExactSynonym>
+        <obo:NCIT_P207>C1519210</obo:NCIT_P207>
+        <obo:NCIT_P108>Second Degree Relative</obo:NCIT_P108>
+        <obo:NCIT_P325>Any individual related biologically or legally to another individual and considered one degree removed from the immediate family as in the case of in-laws, grandparents, aunts and uncles.</obo:NCIT_P325>
+        <obo:NCIT_P325>The aunts, uncles, grandparents, grandchildren, nieces, nephews, or half-siblings of an individual.</obo:NCIT_P325>
+        <obo:NCIT_P322>CDISC</obo:NCIT_P322>
+        <obo:NCIT_P366>Second_Degree_Relative</obo:NCIT_P366>
+        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C100130"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C61410"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C66830"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ncit.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_C21480 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C21480">
+        <rdfs:label>Relative</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C41256"/>
+        <obo:NCIT_P322>CDISC</obo:NCIT_P322>
+        <obo:IAO_0000115>A person related by blood or marriage.</obo:IAO_0000115>
+        <obo:NCIT_P207>C0080103</obo:NCIT_P207>
+        <obo:NCIT_P325>Any individual related biologically or legally to another individual.</obo:NCIT_P325>
+        <oboInOwl:hasExactSynonym>Relative</oboInOwl:hasExactSynonym>
+        <obo:NCIT_P366>Relative</obo:NCIT_P366>
+        <obo:NCIT_P106>Human</obo:NCIT_P106>
+        <obo:NCIT_P108>Relative</obo:NCIT_P108>
+        <oboInOwl:hasExactSynonym>RELATIVE</oboInOwl:hasExactSynonym>
+        <obo:NCIT_NHC0>C21480</obo:NCIT_NHC0>
+        <oboInOwl:hasExactSynonym>Relation</oboInOwl:hasExactSynonym>
+        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C100130"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C61410"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C66830"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ncit.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_C21481 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C21481">
+        <rdfs:label>First Degree Relative</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C21480"/>
+        <obo:NCIT_NHC0>C21481</obo:NCIT_NHC0>
+        <obo:NCIT_P108>First Degree Relative</obo:NCIT_P108>
+        <obo:NCIT_P322>CDISC</obo:NCIT_P322>
+        <obo:NCIT_P207>C1517194</obo:NCIT_P207>
+        <obo:NCIT_P325>Any individual related biologically or legally to another individual and considered immediate family as in the case of a spouse, parent, sibling or child.</obo:NCIT_P325>
+        <oboInOwl:hasExactSynonym>FDR</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>first-degree relative</oboInOwl:hasExactSynonym>
+        <obo:NCIT_P106>Human</obo:NCIT_P106>
+        <obo:NCIT_P366>First_Degree_Relative</obo:NCIT_P366>
+        <obo:IAO_0000115>Any relative who is one meiosis away from a particular individual in a family; a relative with whom one half of an individual&#39;s genes is shared (i.e., parent, sibling, offspring) (from Genetics Home Reference glossary)</obo:IAO_0000115>
+        <obo:NCIT_P325>The parents, siblings, or children of an individual.</obo:NCIT_P325>
+        <oboInOwl:hasExactSynonym>RELATIVE, FIRST DEGREE</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>First Degree Relative</oboInOwl:hasExactSynonym>
+        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C100130"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C61410"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C66830"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ncit.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_C25165 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C25165">
+        <rdfs:label>Daughter</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C21481"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C42708"/>
+        <oboInOwl:hasExactSynonym>Daughter</oboInOwl:hasExactSynonym>
+        <obo:NCIT_P106>Human</obo:NCIT_P106>
+        <obo:NCIT_P207>C0337552</obo:NCIT_P207>
+        <obo:NCIT_P108>Daughter</obo:NCIT_P108>
+        <obo:NCIT_NHC0>C25165</obo:NCIT_NHC0>
+        <obo:NCIT_P366>Daughter</obo:NCIT_P366>
+        <obo:IAO_0000115>A female human offspring.</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ncit.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_C25174 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C25174">
+        <rdfs:label>Father</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C42709"/>
+        <obo:NCIT_NHC0>C25174</obo:NCIT_NHC0>
+        <obo:IAO_0000115>A male parent.</obo:IAO_0000115>
+        <obo:NCIT_P207>C0015671</obo:NCIT_P207>
+        <oboInOwl:hasExactSynonym>Father</oboInOwl:hasExactSynonym>
+        <obo:NCIT_P106>Human</obo:NCIT_P106>
+        <obo:NCIT_P366>Father</obo:NCIT_P366>
+        <obo:NCIT_P108>Father</obo:NCIT_P108>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ncit.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_C25189 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C25189">
+        <rdfs:label>Mother</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C42709"/>
+        <oboInOwl:hasExactSynonym>Mother</oboInOwl:hasExactSynonym>
+        <obo:IAO_0000115>A female parent.</obo:IAO_0000115>
+        <obo:NCIT_P207>C0026591</obo:NCIT_P207>
+        <obo:NCIT_NHC0>C25189</obo:NCIT_NHC0>
+        <obo:NCIT_P108>Mother</obo:NCIT_P108>
+        <obo:NCIT_P106>Human</obo:NCIT_P106>
+        <obo:NCIT_P366>Mother</obo:NCIT_P366>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ncit.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_C25204 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C25204">
+        <rdfs:label>Sibling</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C21480"/>
+        <obo:NCIT_NHC0>C25204</obo:NCIT_NHC0>
+        <obo:NCIT_P106>Human</obo:NCIT_P106>
+        <oboInOwl:hasExactSynonym>Sib</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>Sibling</oboInOwl:hasExactSynonym>
+        <obo:NCIT_P322>CDISC</obo:NCIT_P322>
+        <obo:NCIT_P207>C0037047</obo:NCIT_P207>
+        <obo:IAO_0000115>A person&#39;s brother or sister.</obo:IAO_0000115>
+        <obo:NCIT_P108>Sibling</obo:NCIT_P108>
+        <oboInOwl:hasExactSynonym>sibling</oboInOwl:hasExactSynonym>
+        <obo:NCIT_P325>A person&#39;s brother or sister who has the same parents.</obo:NCIT_P325>
+        <oboInOwl:hasExactSynonym>SIBLING</oboInOwl:hasExactSynonym>
+        <obo:NCIT_P366>Sibling</obo:NCIT_P366>
+        <obo:NCIT_P325>A person&#39;s brother or sister.</obo:NCIT_P325>
+        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C61410"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C66830"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C78735"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ncit.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_C25205 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C25205">
+        <rdfs:label>Son</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C21481"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C42708"/>
+        <obo:NCIT_P108>Son</obo:NCIT_P108>
+        <obo:IAO_0000115>A male human offspring.</obo:IAO_0000115>
+        <obo:NCIT_P366>Son</obo:NCIT_P366>
+        <obo:NCIT_P207>C0037683</obo:NCIT_P207>
+        <oboInOwl:hasExactSynonym>Son</oboInOwl:hasExactSynonym>
+        <obo:NCIT_NHC0>C25205</obo:NCIT_NHC0>
+        <obo:NCIT_P106>Human</obo:NCIT_P106>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ncit.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_C25289 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C25289">
+        <rdfs:label>Brother</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C25204"/>
+        <obo:NCIT_P106>Human</obo:NCIT_P106>
+        <obo:NCIT_P108>Brother</obo:NCIT_P108>
+        <obo:NCIT_P366>Brother</obo:NCIT_P366>
+        <obo:NCIT_NHC0>C25289</obo:NCIT_NHC0>
+        <oboInOwl:hasExactSynonym>Brother</oboInOwl:hasExactSynonym>
+        <obo:IAO_0000115>A male sibling.</obo:IAO_0000115>
+        <obo:NCIT_P207>C0337527</obo:NCIT_P207>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ncit.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_C25680 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C25680">
+        <rdfs:label>Sister</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C25204"/>
+        <oboInOwl:hasExactSynonym>Sister</oboInOwl:hasExactSynonym>
+        <obo:IAO_0000115>A female sibling.</obo:IAO_0000115>
+        <obo:NCIT_NHC0>C25680</obo:NCIT_NHC0>
+        <obo:NCIT_P366>Sister</obo:NCIT_P366>
+        <obo:NCIT_P106>Human</obo:NCIT_P106>
+        <obo:NCIT_P207>C0337514</obo:NCIT_P207>
+        <obo:NCIT_P108>Sister</obo:NCIT_P108>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ncit.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_C41256 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C41256">
+        <rdfs:label>Family Member</rdfs:label>
+        <obo:IAO_0000115>Any of the individuals who are descended from a common progenitor, related by marriage or other legal tie, or by a feeling of closeness.</obo:IAO_0000115>
+        <obo:NCIT_P322>CDISC</obo:NCIT_P322>
+        <obo:NCIT_P108>Family Member</obo:NCIT_P108>
+        <oboInOwl:hasExactSynonym>Family Member</oboInOwl:hasExactSynonym>
+        <obo:NCIT_NHC0>C41256</obo:NCIT_NHC0>
+        <obo:NCIT_P366>Family_Member</obo:NCIT_P366>
+        <obo:NCIT_P106>Human</obo:NCIT_P106>
+        <obo:NCIT_P207>C0086282</obo:NCIT_P207>
+        <oboInOwl:hasExactSynonym>FAMILY MEMBER</oboInOwl:hasExactSynonym>
+        <obo:NCIT_P325>Any of the individuals who are descended from a common progenitor, related by marriage or other legal tie.</obo:NCIT_P325>
+        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C100130"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C61410"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C66830"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C78735"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ncit.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_C42609 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C42609">
+        <rdfs:label>Ancestor</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C21480"/>
+        <oboInOwl:hasExactSynonym>Ancestors</oboInOwl:hasExactSynonym>
+        <obo:NCIT_P207>C0870134</obo:NCIT_P207>
+        <oboInOwl:hasExactSynonym>Progenitor</oboInOwl:hasExactSynonym>
+        <obo:NCIT_P366>Ancestor</obo:NCIT_P366>
+        <obo:IAO_0000115>Someone from whom you are descended (but usually more remote than a grandparent).</obo:IAO_0000115>
+        <obo:NCIT_P106>Human</obo:NCIT_P106>
+        <obo:NCIT_P108>Ancestor</obo:NCIT_P108>
+        <oboInOwl:hasExactSynonym>Ancestor</oboInOwl:hasExactSynonym>
+        <obo:NCIT_NHC0>C42609</obo:NCIT_NHC0>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ncit.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_C42674 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C42674">
+        <rdfs:label>Descendent</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C21480"/>
+        <obo:IAO_0000115>Someone deriving or descending from an ancestor.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym>Descendent</oboInOwl:hasExactSynonym>
+        <obo:NCIT_P366>Descendent</obo:NCIT_P366>
+        <obo:NCIT_NHC0>C42674</obo:NCIT_NHC0>
+        <obo:NCIT_P106>Human</obo:NCIT_P106>
+        <oboInOwl:hasExactSynonym>Descendents</oboInOwl:hasExactSynonym>
+        <obo:NCIT_P108>Descendent</obo:NCIT_P108>
+        <obo:NCIT_P207>C1707686</obo:NCIT_P207>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ncit.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_C42708 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C42708">
+        <rdfs:label>Offspring</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C21480"/>
+        <obo:NCIT_P325>A son or a daughter.</obo:NCIT_P325>
+        <obo:NCIT_P108>Offspring</obo:NCIT_P108>
+        <obo:NCIT_P325>Offspring; the product of reproduction or replication.</obo:NCIT_P325>
+        <obo:IAO_0000115>A human descendant (son or daughter) of any age.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym>Progeny</oboInOwl:hasExactSynonym>
+        <obo:NCIT_P106>Human</obo:NCIT_P106>
+        <oboInOwl:hasExactSynonym>Children</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>Human, Child</oboInOwl:hasExactSynonym>
+        <obo:NCIT_NHC0>C42708</obo:NCIT_NHC0>
+        <obo:NCIT_P207>C0680063</obo:NCIT_P207>
+        <oboInOwl:hasExactSynonym>Offspring</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>CHILD</oboInOwl:hasExactSynonym>
+        <obo:NCIT_P366>Child_Offspring</obo:NCIT_P366>
+        <obo:NCIT_P322>CDISC</obo:NCIT_P322>
+        <oboInOwl:hasExactSynonym>progeny</oboInOwl:hasExactSynonym>
+        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C61410"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C66830"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C78735"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ncit.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_C42709 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C42709">
+        <rdfs:label>Parent</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C21480"/>
+        <oboInOwl:hasExactSynonym>Parent</oboInOwl:hasExactSynonym>
+        <obo:NCIT_P108>Parent</obo:NCIT_P108>
+        <oboInOwl:hasExactSynonym>Parental</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>PARENT</oboInOwl:hasExactSynonym>
+        <obo:NCIT_P366>Parent</obo:NCIT_P366>
+        <obo:NCIT_NHC0>C42709</obo:NCIT_NHC0>
+        <obo:NCIT_P207>C0030551</obo:NCIT_P207>
+        <obo:NCIT_P106>Human</obo:NCIT_P106>
+        <obo:NCIT_P325>A mother or a father.</obo:NCIT_P325>
+        <obo:IAO_0000115>A mother or a father; an immediate progenitor.</obo:IAO_0000115>
+        <obo:NCIT_P322>FDA</obo:NCIT_P322>
+        <obo:NCIT_P322>CDISC</obo:NCIT_P322>
+        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C54447"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C54596"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C61410"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C66830"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C78735"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ncit.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_C62649 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C62649">
+        <rdfs:label>Spouse</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C21480"/>
+        <obo:NCIT_P106>Human</obo:NCIT_P106>
+        <obo:NCIT_NHC0>C62649</obo:NCIT_NHC0>
+        <obo:IAO_0000115>A person&#39;s partner in marriage.</obo:IAO_0000115>
+        <obo:NCIT_P366>Spouse</obo:NCIT_P366>
+        <oboInOwl:hasExactSynonym>Spouse</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>SPOUSE</oboInOwl:hasExactSynonym>
+        <obo:NCIT_P108>Spouse</obo:NCIT_P108>
+        <obo:NCIT_P207>C0162409</obo:NCIT_P207>
+        <obo:NCIT_P322>CDISC</obo:NCIT_P322>
+        <obo:NCIT_P325>A person&#39;s partner in marriage. (NCI)</obo:NCIT_P325>
+        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C100130"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C61410"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C66830"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C78735"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ncit.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_C64435 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C64435">
+        <rdfs:label>Proband</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C41256"/>
+        <obo:NCIT_P325>The individual through whom a family with a genetic disorder is ascertained. In males this is called a propositus, and in females it is called a proposita.</obo:NCIT_P325>
+        <oboInOwl:hasExactSynonym>proband</oboInOwl:hasExactSynonym>
+        <obo:NCIT_P366>Proband</obo:NCIT_P366>
+        <oboInOwl:hasExactSynonym>Proband</oboInOwl:hasExactSynonym>
+        <obo:NCIT_P207>C1948021</obo:NCIT_P207>
+        <obo:NCIT_P108>Proband</obo:NCIT_P108>
+        <obo:IAO_0000115>The affected family member who seeks medical attention for a genetic disorder thereby bringing the family under study.</obo:IAO_0000115>
+        <obo:NCIT_P106>Human</obo:NCIT_P106>
+        <obo:NCIT_NHC0>C64435</obo:NCIT_NHC0>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ncit.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_C68639 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C68639">
+        <rdfs:label>Mother-in-law</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C71396"/>
+        <obo:NCIT_P106>Human</obo:NCIT_P106>
+        <obo:IAO_0000115>The mother of your spouse.</obo:IAO_0000115>
+        <obo:NCIT_NHC0>C68639</obo:NCIT_NHC0>
+        <oboInOwl:hasExactSynonym>Mother-in-law</oboInOwl:hasExactSynonym>
+        <obo:NCIT_P207>C2349972</obo:NCIT_P207>
+        <obo:NCIT_P108>Mother-in-law</obo:NCIT_P108>
+        <obo:NCIT_P366>Mother-in-law</obo:NCIT_P366>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ncit.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_C68640 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C68640">
+        <rdfs:label>Father-in-law</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C71396"/>
+        <obo:NCIT_P366>Father-in-law</obo:NCIT_P366>
+        <obo:NCIT_NHC0>C68640</obo:NCIT_NHC0>
+        <obo:NCIT_P108>Father-in-law</obo:NCIT_P108>
+        <obo:NCIT_P207>C2349973</obo:NCIT_P207>
+        <oboInOwl:hasExactSynonym>Father-in-law</oboInOwl:hasExactSynonym>
+        <obo:NCIT_P106>Human</obo:NCIT_P106>
+        <obo:IAO_0000115>The father of your spouse.</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ncit.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_C71382 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C71382">
+        <rdfs:label>Paternal Relative</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C21480"/>
+        <oboInOwl:hasExactSynonym>Paternal</oboInOwl:hasExactSynonym>
+        <obo:NCIT_P108>Paternal Relative</obo:NCIT_P108>
+        <obo:NCIT_P207>C2347452</obo:NCIT_P207>
+        <obo:NCIT_P366>Paternal_Relative</obo:NCIT_P366>
+        <obo:NCIT_NHC0>C71382</obo:NCIT_NHC0>
+        <oboInOwl:hasExactSynonym>Paternal Relative</oboInOwl:hasExactSynonym>
+        <obo:NCIT_P106>Human</obo:NCIT_P106>
+        <obo:IAO_0000115>A person related by lineage through the father&#39;s side of the family.</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ncit.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_C71383 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C71383">
+        <rdfs:label>Maternal Relative</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C21480"/>
+        <obo:NCIT_P366>Maternal_Relative</obo:NCIT_P366>
+        <oboInOwl:hasExactSynonym>Maternal Relative</oboInOwl:hasExactSynonym>
+        <obo:IAO_0000115>A person related by lineage through the mother&#39;s side of the family.</obo:IAO_0000115>
+        <obo:NCIT_NHC0>C71383</obo:NCIT_NHC0>
+        <oboInOwl:hasExactSynonym>Maternal</oboInOwl:hasExactSynonym>
+        <obo:NCIT_P207>C2347083</obo:NCIT_P207>
+        <obo:NCIT_P108>Maternal Relative</obo:NCIT_P108>
+        <obo:NCIT_P106>Human</obo:NCIT_P106>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ncit.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_C71384 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C71384">
+        <rdfs:label>Biological Relative</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C21480"/>
+        <obo:NCIT_P106>Human</obo:NCIT_P106>
+        <obo:NCIT_P325>Genetic relatedness between individuals who are descendants of at least one common ancestor.</obo:NCIT_P325>
+        <obo:NCIT_P207>C1266852</obo:NCIT_P207>
+        <oboInOwl:hasExactSynonym>consanguinity</oboInOwl:hasExactSynonym>
+        <obo:NCIT_NHC0>C71384</obo:NCIT_NHC0>
+        <oboInOwl:hasExactSynonym>Biological Relative</oboInOwl:hasExactSynonym>
+        <obo:NCIT_P366>Biological_Relative</obo:NCIT_P366>
+        <oboInOwl:hasExactSynonym>Blood Relation</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>Natural Relative</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>Blood Relative</oboInOwl:hasExactSynonym>
+        <obo:NCIT_P322>CDISC</obo:NCIT_P322>
+        <obo:NCIT_P325>An individual that shares genetic makeup with another individual.</obo:NCIT_P325>
+        <oboInOwl:hasExactSynonym>BIOLOGICALLY RELATED</oboInOwl:hasExactSynonym>
+        <obo:NCIT_P108>Biological Relative</obo:NCIT_P108>
+        <obo:IAO_0000115>A person related by descent rather than by marriage or law.</obo:IAO_0000115>
+        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C100130"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C61410"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C66830"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ncit.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_C71385 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C71385">
+        <rdfs:label>Grandparent</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C71388"/>
+        <obo:NCIT_P108>Grandparent</obo:NCIT_P108>
+        <obo:IAO_0000115>A parent of your father or mother.</obo:IAO_0000115>
+        <obo:NCIT_P366>Grandparent</obo:NCIT_P366>
+        <obo:NCIT_P207>C0337471</obo:NCIT_P207>
+        <oboInOwl:hasExactSynonym>Grandparent</oboInOwl:hasExactSynonym>
+        <obo:NCIT_NHC0>C71385</obo:NCIT_NHC0>
+        <obo:NCIT_P106>Human</obo:NCIT_P106>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ncit.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_C71386 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C71386">
+        <rdfs:label>Grandmother</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C71385"/>
+        <obo:NCIT_NHC0>C71386</obo:NCIT_NHC0>
+        <obo:NCIT_P108>Grandmother</obo:NCIT_P108>
+        <obo:NCIT_P207>C0337474</obo:NCIT_P207>
+        <obo:NCIT_P366>Grandmother</obo:NCIT_P366>
+        <obo:NCIT_P106>Human</obo:NCIT_P106>
+        <oboInOwl:hasExactSynonym>Grandmother</oboInOwl:hasExactSynonym>
+        <obo:IAO_0000115>The mother of your father or mother.</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ncit.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_C71387 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C71387">
+        <rdfs:label>Grandfather</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C71385"/>
+        <obo:IAO_0000115>The father of your father or mother.</obo:IAO_0000115>
+        <obo:NCIT_P207>C0337475</obo:NCIT_P207>
+        <obo:NCIT_P108>Grandfather</obo:NCIT_P108>
+        <obo:NCIT_P366>Grandfather</obo:NCIT_P366>
+        <oboInOwl:hasExactSynonym>Grandfather</oboInOwl:hasExactSynonym>
+        <obo:NCIT_P106>Human</obo:NCIT_P106>
+        <obo:NCIT_NHC0>C71387</obo:NCIT_NHC0>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ncit.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_C71388 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C71388">
+        <rdfs:label>Grand Relative</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C21480"/>
+        <obo:IAO_0000115>A relative separated by two generations.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym>Grand Relative</oboInOwl:hasExactSynonym>
+        <obo:NCIT_P207>C2348890</obo:NCIT_P207>
+        <obo:NCIT_P366>Grand_Relative</obo:NCIT_P366>
+        <obo:NCIT_NHC0>C71388</obo:NCIT_NHC0>
+        <obo:NCIT_P106>Human</obo:NCIT_P106>
+        <obo:NCIT_P108>Grand Relative</obo:NCIT_P108>
+        <oboInOwl:hasExactSynonym>Grand Relation</oboInOwl:hasExactSynonym>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ncit.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_C71389 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C71389">
+        <rdfs:label>Great Relative</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C21480"/>
+        <obo:NCIT_P366>Great_Relative</obo:NCIT_P366>
+        <oboInOwl:hasExactSynonym>Great Relation</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>Great Relative</oboInOwl:hasExactSynonym>
+        <obo:NCIT_P108>Great Relative</obo:NCIT_P108>
+        <obo:NCIT_P106>Human</obo:NCIT_P106>
+        <obo:IAO_0000115>When combined with another relation &quot;great&quot; indicates an additional generation of separation between relatives.</obo:IAO_0000115>
+        <obo:NCIT_NHC0>C71389</obo:NCIT_NHC0>
+        <obo:NCIT_P207>C2348895</obo:NCIT_P207>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ncit.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_C71390 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C71390">
+        <rdfs:label>Full Sibling</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C25204"/>
+        <obo:NCIT_NHC0>C71390</obo:NCIT_NHC0>
+        <oboInOwl:hasExactSynonym>SIBLING, FULL</oboInOwl:hasExactSynonym>
+        <obo:NCIT_P106>Human</obo:NCIT_P106>
+        <obo:NCIT_P108>Full Sibling</obo:NCIT_P108>
+        <obo:NCIT_P366>Full_Sibling</obo:NCIT_P366>
+        <obo:NCIT_P322>CDISC</obo:NCIT_P322>
+        <oboInOwl:hasExactSynonym>Full Sibling</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>Full Relation</oboInOwl:hasExactSynonym>
+        <obo:IAO_0000115>A sibling with whom you share both parents.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym>Full Relative</oboInOwl:hasExactSynonym>
+        <obo:NCIT_P207>C2348717</obo:NCIT_P207>
+        <obo:NCIT_P325>A person&#39;s brother or sister with whom they share a genetic makeup inherited from both of their shared biological parents.</obo:NCIT_P325>
+        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C100130"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C61410"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C66830"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ncit.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_C71391 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C71391">
+        <rdfs:label>Half Sibling</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C19811"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C25204"/>
+        <oboInOwl:hasExactSynonym>Half Relation</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>Half Sibling</oboInOwl:hasExactSynonym>
+        <obo:NCIT_P366>Half_Sibling</obo:NCIT_P366>
+        <obo:NCIT_P325>A person&#39;s brother or sister with whom they share a genetic makeup inherited from one of their shared biological parents.</obo:NCIT_P325>
+        <obo:NCIT_P207>C0337505</obo:NCIT_P207>
+        <obo:NCIT_P322>CDISC</obo:NCIT_P322>
+        <obo:NCIT_P325>A person&#39;s brother or sister who has one parent in common.</obo:NCIT_P325>
+        <obo:IAO_0000115>A sibling with whom you share a single parent.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym>Half Relative</oboInOwl:hasExactSynonym>
+        <obo:NCIT_P108>Half Sibling</obo:NCIT_P108>
+        <oboInOwl:hasExactSynonym>half-sibling</oboInOwl:hasExactSynonym>
+        <obo:NCIT_P106>Human</obo:NCIT_P106>
+        <obo:NCIT_NHC0>C71391</obo:NCIT_NHC0>
+        <oboInOwl:hasExactSynonym>SIBLING, HALF</oboInOwl:hasExactSynonym>
+        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C100130"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C61410"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C66830"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ncit.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_C71392 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C71392">
+        <rdfs:label>Legal Relative</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C41256"/>
+        <obo:NCIT_P366>Legal_Relative</obo:NCIT_P366>
+        <oboInOwl:hasExactSynonym>Legal Relative</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>Legal Relation</oboInOwl:hasExactSynonym>
+        <obo:NCIT_P106>Human</obo:NCIT_P106>
+        <obo:NCIT_P108>Legal Relative</obo:NCIT_P108>
+        <obo:NCIT_NHC0>C71392</obo:NCIT_NHC0>
+        <obo:IAO_0000115>Family members related by secondary marriage or other legal arrangement.</obo:IAO_0000115>
+        <obo:NCIT_P207>C2346667</obo:NCIT_P207>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ncit.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_C71393 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C71393">
+        <rdfs:label>Foster Relative</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C71392"/>
+        <obo:NCIT_P108>Foster Relative</obo:NCIT_P108>
+        <obo:IAO_0000115>Unrelated persons who are part of the same foster family.</obo:IAO_0000115>
+        <obo:NCIT_P106>Human</obo:NCIT_P106>
+        <oboInOwl:hasExactSynonym>Foster Relation</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>Foster Relative</oboInOwl:hasExactSynonym>
+        <obo:NCIT_NHC0>C71393</obo:NCIT_NHC0>
+        <obo:NCIT_P207>C2348710</obo:NCIT_P207>
+        <obo:NCIT_P366>Foster_Relative</obo:NCIT_P366>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ncit.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_C71394 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C71394">
+        <rdfs:label>Adoptive Relative</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C71392"/>
+        <oboInOwl:hasExactSynonym>Adoptive Relation</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>Adoptive Relative</oboInOwl:hasExactSynonym>
+        <obo:NCIT_P106>Human</obo:NCIT_P106>
+        <obo:IAO_0000115>A family relation established by a legal proceeding that creates a parent-child relation between persons not related by blood.</obo:IAO_0000115>
+        <obo:NCIT_NHC0>C71394</obo:NCIT_NHC0>
+        <obo:NCIT_P108>Adoptive Relative</obo:NCIT_P108>
+        <obo:NCIT_P366>Adoptive_Relative</obo:NCIT_P366>
+        <obo:NCIT_P207>C2347535</obo:NCIT_P207>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ncit.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_C71395 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C71395">
+        <rdfs:label>Step Relative</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C71392"/>
+        <obo:NCIT_P106>Human</obo:NCIT_P106>
+        <obo:NCIT_NHC0>C71395</obo:NCIT_NHC0>
+        <oboInOwl:hasExactSynonym>Step Relation</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>Step Relative</oboInOwl:hasExactSynonym>
+        <obo:NCIT_P366>Step_Relative</obo:NCIT_P366>
+        <obo:NCIT_P108>Step Relative</obo:NCIT_P108>
+        <obo:NCIT_P207>C2348536</obo:NCIT_P207>
+        <obo:IAO_0000115>A family relation established through a subsequent marriage of your parent.</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ncit.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_C71396 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C71396">
+        <rdfs:label>In-law</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C21480"/>
+        <obo:NCIT_P366>In-law</obo:NCIT_P366>
+        <obo:IAO_0000115>A relative by marriage.</obo:IAO_0000115>
+        <obo:NCIT_P207>C2349980</obo:NCIT_P207>
+        <obo:NCIT_P108>In-law</obo:NCIT_P108>
+        <oboInOwl:hasExactSynonym>In-law</oboInOwl:hasExactSynonym>
+        <obo:NCIT_P106>Human</obo:NCIT_P106>
+        <obo:NCIT_NHC0>C71396</obo:NCIT_NHC0>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ncit.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_C71397 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C71397">
+        <rdfs:label>Grandchild</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C19811"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C71388"/>
+        <oboInOwl:hasExactSynonym>Grandchild</oboInOwl:hasExactSynonym>
+        <obo:NCIT_P106>Human</obo:NCIT_P106>
+        <obo:IAO_0000115>A child of your son or daughter.</obo:IAO_0000115>
+        <obo:NCIT_NHC0>C71397</obo:NCIT_NHC0>
+        <obo:NCIT_P108>Grandchild</obo:NCIT_P108>
+        <obo:NCIT_P207>C0337548</obo:NCIT_P207>
+        <obo:NCIT_P366>Grandchild</obo:NCIT_P366>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ncit.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_C71398 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C71398">
+        <rdfs:label>Grandson</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C71397"/>
+        <obo:NCIT_P366>Grandson</obo:NCIT_P366>
+        <obo:NCIT_P207>C0337573</obo:NCIT_P207>
+        <oboInOwl:hasExactSynonym>Grandson</oboInOwl:hasExactSynonym>
+        <obo:IAO_0000115>A male grandchild.</obo:IAO_0000115>
+        <obo:NCIT_P108>Grandson</obo:NCIT_P108>
+        <obo:NCIT_P106>Human</obo:NCIT_P106>
+        <obo:NCIT_NHC0>C71398</obo:NCIT_NHC0>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ncit.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_C71399 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C71399">
+        <rdfs:label>Granddaughter</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C71397"/>
+        <obo:NCIT_P106>Human</obo:NCIT_P106>
+        <obo:IAO_0000115>A female grandchild.</obo:IAO_0000115>
+        <obo:NCIT_NHC0>C71399</obo:NCIT_NHC0>
+        <obo:NCIT_P207>C0337561</obo:NCIT_P207>
+        <obo:NCIT_P108>Granddaughter</obo:NCIT_P108>
+        <obo:NCIT_P366>Granddaughter</obo:NCIT_P366>
+        <oboInOwl:hasExactSynonym>Granddaughter</oboInOwl:hasExactSynonym>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ncit.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_C71400 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C71400">
+        <rdfs:label>Son-in-law</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C71396"/>
+        <obo:NCIT_P207>C2350007</obo:NCIT_P207>
+        <obo:NCIT_NHC0>C71400</obo:NCIT_NHC0>
+        <obo:NCIT_P366>Son-in-law</obo:NCIT_P366>
+        <obo:NCIT_P108>Son-in-law</obo:NCIT_P108>
+        <obo:IAO_0000115>The husband of your daughter.</obo:IAO_0000115>
+        <obo:NCIT_P106>Human</obo:NCIT_P106>
+        <oboInOwl:hasExactSynonym>Son-in-law</oboInOwl:hasExactSynonym>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ncit.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_C71401 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C71401">
+        <rdfs:label>Daughter-in-law</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C71396"/>
+        <obo:NCIT_NHC0>C71401</obo:NCIT_NHC0>
+        <obo:IAO_0000115>The wife of your son.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym>Daughter-in-law</oboInOwl:hasExactSynonym>
+        <obo:NCIT_P106>Human</obo:NCIT_P106>
+        <obo:NCIT_P108>Daughter-in-law</obo:NCIT_P108>
+        <obo:NCIT_P207>C1553705</obo:NCIT_P207>
+        <obo:NCIT_P366>Daughter-in-law</obo:NCIT_P366>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ncit.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_C71402 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C71402">
+        <rdfs:label>Half Brother</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C25289"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C71391"/>
+        <obo:NCIT_P322>CDISC</obo:NCIT_P322>
+        <obo:NCIT_P108>Half Brother</obo:NCIT_P108>
+        <oboInOwl:hasExactSynonym>Half Brother</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>BROTHER, HALF</oboInOwl:hasExactSynonym>
+        <obo:NCIT_P207>C0337531</obo:NCIT_P207>
+        <obo:NCIT_NHC0>C71402</obo:NCIT_NHC0>
+        <obo:NCIT_P106>Human</obo:NCIT_P106>
+        <obo:NCIT_P366>Half_Brother</obo:NCIT_P366>
+        <oboInOwl:hasExactSynonym>Half-brother</oboInOwl:hasExactSynonym>
+        <obo:IAO_0000115>A male sibling with whom you share a single parent.</obo:IAO_0000115>
+        <obo:NCIT_P325>A male who shares with his sibling the genetic makeup inherited from only one of the biological parents.</obo:NCIT_P325>
+        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C100130"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C61410"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C66830"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ncit.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_C71403 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C71403">
+        <rdfs:label>Half Sister</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C25680"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C71391"/>
+        <obo:NCIT_P325>A female who shares with her sibling the genetic makeup inherited from only one of the biological parents.</obo:NCIT_P325>
+        <oboInOwl:hasExactSynonym>SISTER, HALF</oboInOwl:hasExactSynonym>
+        <obo:NCIT_P207>C0337518</obo:NCIT_P207>
+        <obo:NCIT_NHC0>C71403</obo:NCIT_NHC0>
+        <obo:NCIT_P108>Half Sister</obo:NCIT_P108>
+        <oboInOwl:hasExactSynonym>Half-sister</oboInOwl:hasExactSynonym>
+        <obo:NCIT_P322>CDISC</obo:NCIT_P322>
+        <obo:NCIT_P366>Half_Sister</obo:NCIT_P366>
+        <oboInOwl:hasExactSynonym>Half Sister</oboInOwl:hasExactSynonym>
+        <obo:IAO_0000115>A female sibling with whom you share a single parent.</obo:IAO_0000115>
+        <obo:NCIT_P106>Human</obo:NCIT_P106>
+        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C100130"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C61410"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C66830"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ncit.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_C71404 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C71404">
+        <rdfs:label>Uncle</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C21480"/>
+        <obo:NCIT_P207>C0337577</obo:NCIT_P207>
+        <obo:NCIT_P106>Human</obo:NCIT_P106>
+        <obo:NCIT_P108>Uncle</obo:NCIT_P108>
+        <oboInOwl:hasExactSynonym>Uncle</oboInOwl:hasExactSynonym>
+        <obo:IAO_0000115>The brother of your father or mother; the husband of your aunt.</obo:IAO_0000115>
+        <obo:NCIT_NHC0>C71404</obo:NCIT_NHC0>
+        <obo:NCIT_P366>Uncle</obo:NCIT_P366>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ncit.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_C71405 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C71405">
+        <rdfs:label>Aunt</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C21480"/>
+        <obo:NCIT_P207>C0337576</obo:NCIT_P207>
+        <oboInOwl:hasExactSynonym>Aunt</oboInOwl:hasExactSynonym>
+        <obo:NCIT_NHC0>C71405</obo:NCIT_NHC0>
+        <obo:NCIT_P106>Human</obo:NCIT_P106>
+        <obo:NCIT_P366>Aunt</obo:NCIT_P366>
+        <obo:IAO_0000115>The sister of your father or mother; the wife of your uncle.</obo:IAO_0000115>
+        <obo:NCIT_P108>Aunt</obo:NCIT_P108>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ncit.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_C71406 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C71406">
+        <rdfs:label>Brother-in-law</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C71396"/>
+        <obo:NCIT_P108>Brother-in-law</obo:NCIT_P108>
+        <obo:NCIT_P106>Human</obo:NCIT_P106>
+        <obo:NCIT_NHC0>C71406</obo:NCIT_NHC0>
+        <obo:NCIT_P366>Brother-in-law</obo:NCIT_P366>
+        <obo:NCIT_P207>C1553711</obo:NCIT_P207>
+        <oboInOwl:hasExactSynonym>Brother-in-law</oboInOwl:hasExactSynonym>
+        <obo:IAO_0000115>A brother by marriage.</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ncit.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_C71407 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C71407">
+        <rdfs:label>Sister-in-law</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C71396"/>
+        <obo:NCIT_P207>C2350006</obo:NCIT_P207>
+        <obo:IAO_0000115>A sister by marriage.</obo:IAO_0000115>
+        <obo:NCIT_P108>Sister-in-law</obo:NCIT_P108>
+        <oboInOwl:hasExactSynonym>Sister-in-law</oboInOwl:hasExactSynonym>
+        <obo:NCIT_P366>Sister-in-law</obo:NCIT_P366>
+        <obo:NCIT_NHC0>C71407</obo:NCIT_NHC0>
+        <obo:NCIT_P106>Human</obo:NCIT_P106>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ncit.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_C71408 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C71408">
+        <rdfs:label>Niece</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C19811"/>
+        <obo:NCIT_P108>Niece</obo:NCIT_P108>
+        <obo:NCIT_P106>Human</obo:NCIT_P106>
+        <obo:NCIT_P366>Niece</obo:NCIT_P366>
+        <obo:NCIT_NHC0>C71408</obo:NCIT_NHC0>
+        <oboInOwl:hasExactSynonym>Niece</oboInOwl:hasExactSynonym>
+        <obo:IAO_0000115>A daughter of your brother or sister.</obo:IAO_0000115>
+        <obo:NCIT_P207>C0337578</obo:NCIT_P207>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ncit.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_C71409 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C71409">
+        <rdfs:label>Nephew</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C19811"/>
+        <obo:IAO_0000115>A son of your brother or sister.</obo:IAO_0000115>
+        <obo:NCIT_P108>Nephew</obo:NCIT_P108>
+        <obo:NCIT_P106>Human</obo:NCIT_P106>
+        <obo:NCIT_P366>Nephew</obo:NCIT_P366>
+        <obo:NCIT_NHC0>C71409</obo:NCIT_NHC0>
+        <obo:NCIT_P207>C0337579</obo:NCIT_P207>
+        <oboInOwl:hasExactSynonym>Nephew</oboInOwl:hasExactSynonym>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ncit.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_C71410 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C71410">
+        <rdfs:label>Cousin</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C21480"/>
+        <obo:NCIT_P106>Human</obo:NCIT_P106>
+        <obo:NCIT_P366>Cousin</obo:NCIT_P366>
+        <obo:NCIT_P108>Cousin</obo:NCIT_P108>
+        <obo:IAO_0000115>A child of your aunt or uncle or their descendents.</obo:IAO_0000115>
+        <obo:NCIT_NHC0>C71410</obo:NCIT_NHC0>
+        <obo:NCIT_P207>C0337580</obo:NCIT_P207>
+        <oboInOwl:hasExactSynonym>Cousin</oboInOwl:hasExactSynonym>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ncit.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_C71411 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C71411">
+        <rdfs:label>First Cousin</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C71410"/>
+        <obo:NCIT_P207>C0337583</obo:NCIT_P207>
+        <obo:NCIT_P106>Human</obo:NCIT_P106>
+        <oboInOwl:hasExactSynonym>First Cousin</oboInOwl:hasExactSynonym>
+        <obo:NCIT_P108>First Cousin</obo:NCIT_P108>
+        <obo:IAO_0000115>A child of your aunt or uncle.</obo:IAO_0000115>
+        <obo:NCIT_P366>First_Cousin</obo:NCIT_P366>
+        <obo:NCIT_NHC0>C71411</obo:NCIT_NHC0>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ncit.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_C71412 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C71412">
+        <rdfs:label>First Cousin Once Removed</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C71410"/>
+        <obo:NCIT_P207>C2348676</obo:NCIT_P207>
+        <obo:NCIT_P108>First Cousin Once Removed</obo:NCIT_P108>
+        <obo:NCIT_P106>Human</obo:NCIT_P106>
+        <obo:IAO_0000115>A child of your first cousin.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym>First Cousin Once Removed</oboInOwl:hasExactSynonym>
+        <obo:NCIT_NHC0>C71412</obo:NCIT_NHC0>
+        <obo:NCIT_P366>First_Cousin_Once_Removed</obo:NCIT_P366>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ncit.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_C71587 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C71587">
+        <rdfs:label>Wife</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C62649"/>
+        <obo:IAO_0000115>A female partner in marriage.</obo:IAO_0000115>
+        <obo:NCIT_P366>Wife</obo:NCIT_P366>
+        <obo:NCIT_P207>C0242665</obo:NCIT_P207>
+        <oboInOwl:hasExactSynonym>Wife</oboInOwl:hasExactSynonym>
+        <obo:NCIT_P108>Wife</obo:NCIT_P108>
+        <obo:NCIT_NHC0>C71587</obo:NCIT_NHC0>
+        <obo:NCIT_P106>Human</obo:NCIT_P106>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ncit.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_C71588 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C71588">
+        <rdfs:label>Husband</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C62649"/>
+        <obo:NCIT_P325>A male partner in marriage. (NCI)</obo:NCIT_P325>
+        <obo:NCIT_P108>Husband</obo:NCIT_P108>
+        <obo:IAO_0000115>A male partner in marriage.</obo:IAO_0000115>
+        <obo:NCIT_P322>CDISC</obo:NCIT_P322>
+        <obo:NCIT_P366>Husband</obo:NCIT_P366>
+        <obo:NCIT_P207>C0242664</obo:NCIT_P207>
+        <oboInOwl:hasExactSynonym>HUSBAND</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>Husband</oboInOwl:hasExactSynonym>
+        <obo:NCIT_NHC0>C71588</obo:NCIT_NHC0>
+        <obo:NCIT_P106>Human</obo:NCIT_P106>
+        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C100130"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C61410"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C66830"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ncit.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_C73427 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C73427">
+        <rdfs:label>Twin</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C25204"/>
+        <obo:NCIT_P325>Either of two offspring born from the same pregnancy. (NCI)</obo:NCIT_P325>
+        <oboInOwl:hasExactSynonym>Twin</oboInOwl:hasExactSynonym>
+        <obo:NCIT_P207>C0041427</obo:NCIT_P207>
+        <obo:NCIT_P108>Twin</obo:NCIT_P108>
+        <oboInOwl:hasExactSynonym>TWIN</oboInOwl:hasExactSynonym>
+        <obo:NCIT_NHC0>C73427</obo:NCIT_NHC0>
+        <obo:NCIT_P322>CDISC</obo:NCIT_P322>
+        <obo:NCIT_P106>Human</obo:NCIT_P106>
+        <obo:NCIT_P366>Twin</obo:NCIT_P366>
+        <obo:IAO_0000115>Either of two offspring born from the same pregnancy.</obo:IAO_0000115>
+        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C100130"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C61410"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C66830"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ncit.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_C73428 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C73428">
+        <rdfs:label>Fraternal Twin</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C73427"/>
+        <obo:NCIT_P366>Fraternal_Twin</obo:NCIT_P366>
+        <obo:IAO_0000115>Either of the two offspring from separately fertilized ova during the same pregnancy.</obo:IAO_0000115>
+        <obo:NCIT_P325>Either of the two offspring resulting from two separately fertilized ovums during the same pregnancy.</obo:NCIT_P325>
+        <oboInOwl:hasExactSynonym>Dizygotic Twin</oboInOwl:hasExactSynonym>
+        <obo:NCIT_NHC0>C73428</obo:NCIT_NHC0>
+        <obo:NCIT_P108>Fraternal Twin</obo:NCIT_P108>
+        <oboInOwl:hasExactSynonym>TWIN, DIZYGOTIC</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>Fraternal Twin</oboInOwl:hasExactSynonym>
+        <obo:NCIT_P106>Human</obo:NCIT_P106>
+        <obo:NCIT_P322>CDISC</obo:NCIT_P322>
+        <obo:NCIT_P207>C0041429</obo:NCIT_P207>
+        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C100130"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C61410"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C66830"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ncit.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_C73429 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C73429">
+        <rdfs:label>Identical Twin</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C73427"/>
+        <obo:NCIT_P207>C0041432</obo:NCIT_P207>
+        <obo:NCIT_NHC0>C73429</obo:NCIT_NHC0>
+        <obo:NCIT_P366>Identical_Twin</obo:NCIT_P366>
+        <obo:NCIT_P106>Human</obo:NCIT_P106>
+        <obo:IAO_0000115>Either of the two offspring resulting from a shared ovum.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym>TWIN, MONOZYGOTIC</oboInOwl:hasExactSynonym>
+        <obo:NCIT_P325>Either of the two offspring resulting from a shared ovum. (NCI)</obo:NCIT_P325>
+        <oboInOwl:hasExactSynonym>Identical Twin</oboInOwl:hasExactSynonym>
+        <obo:NCIT_P108>Identical Twin</obo:NCIT_P108>
+        <obo:NCIT_P322>CDISC</obo:NCIT_P322>
+        <oboInOwl:hasExactSynonym>Monozygotic Twin</oboInOwl:hasExactSynonym>
+        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C100130"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C61410"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C66830"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ncit.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_C94482 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C94482">
+        <rdfs:label>Proposita</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C64435"/>
+        <obo:NCIT_NHC0>C94482</obo:NCIT_NHC0>
+        <obo:NCIT_P106>Human</obo:NCIT_P106>
+        <obo:NCIT_P207>C0314653</obo:NCIT_P207>
+        <oboInOwl:hasExactSynonym>Proposita</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>proposita</oboInOwl:hasExactSynonym>
+        <obo:NCIT_P325>The female individual through whom a family with a genetic disorder is ascertained. In males this is called a propositus.</obo:NCIT_P325>
+        <obo:NCIT_P108>Proposita</obo:NCIT_P108>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ncit.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_C94483 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C94483">
+        <rdfs:label>Propositus</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C64435"/>
+        <obo:NCIT_NHC0>C94483</obo:NCIT_NHC0>
+        <obo:NCIT_P207>C0702110</obo:NCIT_P207>
+        <oboInOwl:hasExactSynonym>propositus</oboInOwl:hasExactSynonym>
+        <obo:NCIT_P108>Propositus</obo:NCIT_P108>
+        <obo:NCIT_P325>The male individual through whom a family with a genetic disorder is ascertained. In females this is called a proposita.</obo:NCIT_P325>
+        <obo:NCIT_P106>Human</obo:NCIT_P106>
+        <oboInOwl:hasExactSynonym>Propositus</oboInOwl:hasExactSynonym>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ncit.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_C96569 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C96569">
+        <rdfs:label>Biological Aunt</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C19811"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C71405"/>
+        <oboInOwl:hasExactSynonym>Biological Aunt</oboInOwl:hasExactSynonym>
+        <obo:IAO_0000115>A female relative who is a sibling of either of the biological parents, and who share a common ancestor.</obo:IAO_0000115>
+        <obo:NCIT_P108>Biological Aunt</obo:NCIT_P108>
+        <obo:NCIT_P325>A female relative who is a sibling of either of the biological parents, and who share a common ancestor. (NCI)</obo:NCIT_P325>
+        <oboInOwl:hasExactSynonym>AUNT, BIOLOGICAL</oboInOwl:hasExactSynonym>
+        <obo:NCIT_P207>C3272868</obo:NCIT_P207>
+        <obo:NCIT_P106>Human</obo:NCIT_P106>
+        <obo:NCIT_P322>CDISC</obo:NCIT_P322>
+        <obo:NCIT_NHC0>C96569</obo:NCIT_NHC0>
+        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C100130"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C61410"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C66830"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ncit.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_C96570 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C96570">
+        <rdfs:label>Biological Brother</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C100809"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C25289"/>
+        <obo:NCIT_P322>CDISC</obo:NCIT_P322>
+        <oboInOwl:hasExactSynonym>BROTHER, BIOLOGICAL</oboInOwl:hasExactSynonym>
+        <obo:NCIT_NHC0>C96570</obo:NCIT_NHC0>
+        <obo:NCIT_P108>Biological Brother</obo:NCIT_P108>
+        <obo:NCIT_P207>C0337528</obo:NCIT_P207>
+        <oboInOwl:hasExactSynonym>Biological Brother</oboInOwl:hasExactSynonym>
+        <obo:NCIT_P106>Human</obo:NCIT_P106>
+        <obo:IAO_0000115>A male who shares with his sibling the genetic makeup inherited from one or both of their shared biological parents.</obo:IAO_0000115>
+        <obo:NCIT_P325>A male who shares with his sibling the genetic makeup inherited from one or both of their shared biological parents.</obo:NCIT_P325>
+        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C100130"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C61410"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C66830"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ncit.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_C96571 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C96571">
+        <rdfs:label>Biological Cousin</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C71410"/>
+        <obo:IAO_0000115>A relative who is the offspring of a sibling of either of the biological parents, and who share a common ancestor.</obo:IAO_0000115>
+        <obo:NCIT_P325>A relative who is the offspring of a sibling of either of the biological parents, and who share a common ancestor. (NCI)</obo:NCIT_P325>
+        <obo:NCIT_P322>CDISC</obo:NCIT_P322>
+        <obo:NCIT_NHC0>C96571</obo:NCIT_NHC0>
+        <obo:NCIT_P207>C3272869</obo:NCIT_P207>
+        <obo:NCIT_P108>Biological Cousin</obo:NCIT_P108>
+        <oboInOwl:hasExactSynonym>COUSIN, BIOLOGICAL</oboInOwl:hasExactSynonym>
+        <obo:NCIT_P106>Human</obo:NCIT_P106>
+        <oboInOwl:hasExactSynonym>Biological Cousin</oboInOwl:hasExactSynonym>
+        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C100130"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C61410"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C66830"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ncit.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_C96572 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C96572">
+        <rdfs:label>Biological Father</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C21481"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C25174"/>
+        <oboInOwl:hasExactSynonym>FATHER, BIOLOGICAL</oboInOwl:hasExactSynonym>
+        <obo:NCIT_P108>Biological Father</obo:NCIT_P108>
+        <obo:NCIT_P106>Human</obo:NCIT_P106>
+        <obo:NCIT_P325>A male who contributes to the genetic makeup of his offspring through the fertilization of an ovum by his sperm. (NCI)</obo:NCIT_P325>
+        <obo:NCIT_P322>CDISC</obo:NCIT_P322>
+        <oboInOwl:hasExactSynonym>Biological Father</oboInOwl:hasExactSynonym>
+        <obo:NCIT_P207>C0337494</obo:NCIT_P207>
+        <obo:IAO_0000115>A male who contributes to the genetic makeup of his offspring through the fertilization of an ovum by his sperm.</obo:IAO_0000115>
+        <obo:NCIT_NHC0>C96572</obo:NCIT_NHC0>
+        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C100130"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C61410"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C66830"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ncit.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_C96573 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C96573">
+        <rdfs:label>Biological Grandfather</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C19811"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C71387"/>
+        <obo:NCIT_P322>CDISC</obo:NCIT_P322>
+        <oboInOwl:hasExactSynonym>GRANDFATHER, BIOLOGICAL</oboInOwl:hasExactSynonym>
+        <obo:NCIT_P325>A male relative who is the biological father of either the biological mother or the biological father. (NCI)</obo:NCIT_P325>
+        <obo:NCIT_P108>Biological Grandfather</obo:NCIT_P108>
+        <obo:NCIT_P106>Human</obo:NCIT_P106>
+        <obo:NCIT_P207>C0337477</obo:NCIT_P207>
+        <obo:NCIT_NHC0>C96573</obo:NCIT_NHC0>
+        <obo:IAO_0000115>A male relative who is the biological father of either the biological mother or the biological father.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym>Biological Grandfather</oboInOwl:hasExactSynonym>
+        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C100130"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C61410"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C66830"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ncit.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_C96574 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C96574">
+        <rdfs:label>Biological Grandmother</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C19811"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C71386"/>
+        <obo:NCIT_NHC0>C96574</obo:NCIT_NHC0>
+        <obo:IAO_0000115>A female relative who is the biological mother of either the biological mother or the biological father.</obo:IAO_0000115>
+        <obo:NCIT_P207>C0337476</obo:NCIT_P207>
+        <obo:NCIT_P106>Human</obo:NCIT_P106>
+        <obo:NCIT_P108>Biological Grandmother</obo:NCIT_P108>
+        <obo:NCIT_P322>CDISC</obo:NCIT_P322>
+        <oboInOwl:hasExactSynonym>Biological Grandmother</oboInOwl:hasExactSynonym>
+        <obo:NCIT_P325>A female relative who is the biological mother of either the biological mother or the biological father. (NCI)</obo:NCIT_P325>
+        <oboInOwl:hasExactSynonym>GRANDMOTHER, BIOLOGICAL</oboInOwl:hasExactSynonym>
+        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C100130"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C61410"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C66830"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ncit.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_C96575 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C96575">
+        <rdfs:label>Biological Maternal Aunt</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C96569"/>
+        <oboInOwl:hasExactSynonym>Biological Maternal Aunt</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>AUNT, BIOLOGICAL MATERNAL</oboInOwl:hasExactSynonym>
+        <obo:NCIT_P325>A female relative who is a sibling of the biological mother, and who both share a common ancestor. (NCI)</obo:NCIT_P325>
+        <obo:NCIT_P108>Biological Maternal Aunt</obo:NCIT_P108>
+        <obo:NCIT_P106>Human</obo:NCIT_P106>
+        <obo:NCIT_NHC0>C96575</obo:NCIT_NHC0>
+        <obo:NCIT_P322>CDISC</obo:NCIT_P322>
+        <obo:NCIT_P207>C3272872</obo:NCIT_P207>
+        <obo:IAO_0000115>A female relative who is a sibling of the biological mother, and who both share a common ancestor.</obo:IAO_0000115>
+        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C100130"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C61410"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C66830"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ncit.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_C96576 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C96576">
+        <rdfs:label>Biological Maternal Cousin</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C71410"/>
+        <oboInOwl:hasExactSynonym>COUSIN, BIOLOGICAL MATERNAL</oboInOwl:hasExactSynonym>
+        <obo:NCIT_NHC0>C96576</obo:NCIT_NHC0>
+        <oboInOwl:hasExactSynonym>Biological Maternal Cousin</oboInOwl:hasExactSynonym>
+        <obo:IAO_0000115>A relative who is the offspring of a sibling of the biological mother and thus sharing a common ancestor.</obo:IAO_0000115>
+        <obo:NCIT_P325>A relative who is the offspring of a sibling of the biological mother and share a common ancestor.</obo:NCIT_P325>
+        <obo:NCIT_P322>CDISC</obo:NCIT_P322>
+        <obo:NCIT_P106>Human</obo:NCIT_P106>
+        <obo:NCIT_P207>C3272873</obo:NCIT_P207>
+        <obo:NCIT_P108>Biological Maternal Cousin</obo:NCIT_P108>
+        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C100130"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C61410"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C66830"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ncit.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_C96577 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C96577">
+        <rdfs:label>Biological Maternal Grandfather</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C96573"/>
+        <obo:NCIT_P207>C3272874</obo:NCIT_P207>
+        <obo:NCIT_P322>CDISC</obo:NCIT_P322>
+        <obo:NCIT_P106>Human</obo:NCIT_P106>
+        <oboInOwl:hasExactSynonym>Biological Maternal Grandfather</oboInOwl:hasExactSynonym>
+        <obo:NCIT_NHC0>C96577</obo:NCIT_NHC0>
+        <obo:IAO_0000115>A male relative who is the biological father of the biological mother.</obo:IAO_0000115>
+        <obo:NCIT_P108>Biological Maternal Grandfather</obo:NCIT_P108>
+        <obo:NCIT_P325>A male relative who is the biological father of the biological mother. (NCI)</obo:NCIT_P325>
+        <oboInOwl:hasExactSynonym>GRANDFATHER, BIOLOGICAL MATERNAL</oboInOwl:hasExactSynonym>
+        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C100130"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C61410"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C66830"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ncit.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_C96578 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C96578">
+        <rdfs:label>Biological Maternal Grandmother</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C96574"/>
+        <obo:NCIT_NHC0>C96578</obo:NCIT_NHC0>
+        <obo:NCIT_P108>Biological Maternal Grandmother</obo:NCIT_P108>
+        <obo:NCIT_P106>Human</obo:NCIT_P106>
+        <oboInOwl:hasExactSynonym>Biological Maternal Grandmother</oboInOwl:hasExactSynonym>
+        <obo:NCIT_P207>C3272875</obo:NCIT_P207>
+        <obo:IAO_0000115>A female relative who is the biological mother of the biological mother.</obo:IAO_0000115>
+        <obo:NCIT_P322>CDISC</obo:NCIT_P322>
+        <oboInOwl:hasExactSynonym>GRANDMOTHER, BIOLOGICAL MATERNAL</oboInOwl:hasExactSynonym>
+        <obo:NCIT_P325>A female relative who is the biological mother of the biological mother. (NCI)</obo:NCIT_P325>
+        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C100130"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C61410"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C66830"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ncit.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_C96579 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C96579">
+        <rdfs:label>Biological Maternal Uncle</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C96587"/>
+        <obo:IAO_0000115>A male relative who is a sibling of the biological mother, and who both share a common ancestor.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym>UNCLE, BIOLOGICAL MATERNAL</oboInOwl:hasExactSynonym>
+        <obo:NCIT_P322>CDISC</obo:NCIT_P322>
+        <oboInOwl:hasExactSynonym>Biological Maternal Uncle</oboInOwl:hasExactSynonym>
+        <obo:NCIT_P325>A male relative who is a sibling of the biological mother, and who both share a common ancestor. (NCI)</obo:NCIT_P325>
+        <obo:NCIT_P106>Human</obo:NCIT_P106>
+        <obo:NCIT_P207>C3272876</obo:NCIT_P207>
+        <obo:NCIT_NHC0>C96579</obo:NCIT_NHC0>
+        <obo:NCIT_P108>Biological Maternal Uncle</obo:NCIT_P108>
+        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C100130"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C61410"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C66830"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ncit.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_C96580 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C96580">
+        <rdfs:label>Biological Mother</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C21481"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C25189"/>
+        <obo:IAO_0000115>A female who contributes to the genetic makeup of her offspring from the fertilization of her ovum.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym>MOTHER, BIOLOGICAL</oboInOwl:hasExactSynonym>
+        <obo:NCIT_P322>CDISC</obo:NCIT_P322>
+        <oboInOwl:hasExactSynonym>Biological Mother</oboInOwl:hasExactSynonym>
+        <obo:NCIT_P325>A female who contributes to the genetic makeup of her offspring from the fertilization of her ovum. (NCI)</obo:NCIT_P325>
+        <obo:NCIT_NHC0>C96580</obo:NCIT_NHC0>
+        <obo:NCIT_P106>Human</obo:NCIT_P106>
+        <obo:NCIT_P108>Biological Mother</obo:NCIT_P108>
+        <obo:NCIT_P207>C0337486</obo:NCIT_P207>
+        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C100130"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C61410"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C66830"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ncit.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_C96581 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C96581">
+        <rdfs:label>Biological Paternal Aunt</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C96569"/>
+        <obo:NCIT_NHC0>C96581</obo:NCIT_NHC0>
+        <oboInOwl:hasExactSynonym>AUNT, BIOLOGICAL PATERNAL</oboInOwl:hasExactSynonym>
+        <obo:NCIT_P322>CDISC</obo:NCIT_P322>
+        <obo:IAO_0000115>A female relative who is a sibling of the biological father, and who both share a common ancestor.</obo:IAO_0000115>
+        <obo:NCIT_P108>Biological Paternal Aunt</obo:NCIT_P108>
+        <obo:NCIT_P106>Human</obo:NCIT_P106>
+        <obo:NCIT_P207>C3272877</obo:NCIT_P207>
+        <oboInOwl:hasExactSynonym>Biological Paternal Aunt</oboInOwl:hasExactSynonym>
+        <obo:NCIT_P325>A female relative who is a sibling of the biological father, and who both share a common ancestor. (NCI)</obo:NCIT_P325>
+        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C100130"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C61410"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C66830"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ncit.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_C96582 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C96582">
+        <rdfs:label>Biological Paternal Cousin</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C71410"/>
+        <obo:IAO_0000115>A relative who is the offspring of a sibling of the biological father and thus sharing a common ancestor.</obo:IAO_0000115>
+        <obo:NCIT_P106>Human</obo:NCIT_P106>
+        <obo:NCIT_P207>C3272878</obo:NCIT_P207>
+        <obo:NCIT_P322>CDISC</obo:NCIT_P322>
+        <obo:NCIT_P325>A relative who is the offspring of a sibling of the biological father and share a common ancestor.</obo:NCIT_P325>
+        <obo:NCIT_NHC0>C96582</obo:NCIT_NHC0>
+        <oboInOwl:hasExactSynonym>Biological Paternal Cousin</oboInOwl:hasExactSynonym>
+        <obo:NCIT_P108>Biological Paternal Cousin</obo:NCIT_P108>
+        <oboInOwl:hasExactSynonym>COUSIN, BIOLOGICAL PATERNAL</oboInOwl:hasExactSynonym>
+        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C100130"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C61410"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C66830"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ncit.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_C96583 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C96583">
+        <rdfs:label>Biological Paternal Grandfather</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C96573"/>
+        <obo:NCIT_NHC0>C96583</obo:NCIT_NHC0>
+        <oboInOwl:hasExactSynonym>Biological Paternal Grandfather</oboInOwl:hasExactSynonym>
+        <obo:IAO_0000115>A male relative who is the biological father of the biological father.</obo:IAO_0000115>
+        <obo:NCIT_P207>C3272879</obo:NCIT_P207>
+        <obo:NCIT_P325>A male relative who is the biological father of the biological father. (NCI)</obo:NCIT_P325>
+        <oboInOwl:hasExactSynonym>GRANDFATHER, BIOLOGICAL PATERNAL</oboInOwl:hasExactSynonym>
+        <obo:NCIT_P108>Biological Paternal Grandfather</obo:NCIT_P108>
+        <obo:NCIT_P322>CDISC</obo:NCIT_P322>
+        <obo:NCIT_P106>Human</obo:NCIT_P106>
+        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C100130"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C61410"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C66830"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ncit.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_C96584 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C96584">
+        <rdfs:label>Biological Paternal Grandmother</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C96574"/>
+        <oboInOwl:hasExactSynonym>Biological Paternal Grandmother</oboInOwl:hasExactSynonym>
+        <obo:NCIT_P108>Biological Paternal Grandmother</obo:NCIT_P108>
+        <obo:NCIT_P325>A female relative who is the biological mother of the biological father. (NCI)</obo:NCIT_P325>
+        <obo:NCIT_P322>CDISC</obo:NCIT_P322>
+        <obo:NCIT_P106>Human</obo:NCIT_P106>
+        <oboInOwl:hasExactSynonym>GRANDMOTHER, BIOLOGICAL PATERNAL</oboInOwl:hasExactSynonym>
+        <obo:IAO_0000115>A female relative who is the biological mother of the biological father.</obo:IAO_0000115>
+        <obo:NCIT_NHC0>C96584</obo:NCIT_NHC0>
+        <obo:NCIT_P207>C3272880</obo:NCIT_P207>
+        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C100130"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C61410"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C66830"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ncit.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_C96585 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C96585">
+        <rdfs:label>Biological Paternal Uncle</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C96587"/>
+        <obo:NCIT_NHC0>C96585</obo:NCIT_NHC0>
+        <obo:IAO_0000115>A male relative who is a sibling of the biological father, and who both share a common ancestor.</obo:IAO_0000115>
+        <obo:NCIT_P325>A male relative who is a sibling of the biological father, and who both share a common ancestor. (NCI)</obo:NCIT_P325>
+        <oboInOwl:hasExactSynonym>Biological Paternal Uncle</oboInOwl:hasExactSynonym>
+        <obo:NCIT_P108>Biological Paternal Uncle</obo:NCIT_P108>
+        <obo:NCIT_P322>CDISC</obo:NCIT_P322>
+        <oboInOwl:hasExactSynonym>UNCLE, BIOLOGICAL PATERNAL</oboInOwl:hasExactSynonym>
+        <obo:NCIT_P106>Human</obo:NCIT_P106>
+        <obo:NCIT_P207>C3272881</obo:NCIT_P207>
+        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C100130"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C61410"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C66830"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ncit.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_C96586 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C96586">
+        <rdfs:label>Biological Sister</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C100809"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C25680"/>
+        <oboInOwl:hasExactSynonym>SISTER, BIOLOGICAL</oboInOwl:hasExactSynonym>
+        <obo:NCIT_P322>CDISC</obo:NCIT_P322>
+        <oboInOwl:hasExactSynonym>Biological Sister</oboInOwl:hasExactSynonym>
+        <obo:NCIT_NHC0>C96586</obo:NCIT_NHC0>
+        <obo:NCIT_P325>A female who shares with her sibling the genetic makeup inherited from one or both of their shared biological parents.</obo:NCIT_P325>
+        <obo:IAO_0000115>A female who shares with her sibling the genetic makeup inherited from one or both of their shared biological parents.</obo:IAO_0000115>
+        <obo:NCIT_P207>C0337515</obo:NCIT_P207>
+        <obo:NCIT_P106>Human</obo:NCIT_P106>
+        <obo:NCIT_P108>Biological Sister</obo:NCIT_P108>
+        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C100130"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C61410"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C66830"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ncit.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_C96587 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C96587">
+        <rdfs:label>Biological Uncle</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C19811"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C71404"/>
+        <obo:NCIT_P108>Biological Uncle</obo:NCIT_P108>
+        <oboInOwl:hasExactSynonym>Biological Uncle</oboInOwl:hasExactSynonym>
+        <obo:NCIT_P322>CDISC</obo:NCIT_P322>
+        <oboInOwl:hasExactSynonym>UNCLE, BIOLOGICAL</oboInOwl:hasExactSynonym>
+        <obo:NCIT_P207>C3272882</obo:NCIT_P207>
+        <obo:NCIT_P325>A male relative who is a sibling of either of the biological parents, and who share a common ancestor. (NCI)</obo:NCIT_P325>
+        <obo:NCIT_P106>Human</obo:NCIT_P106>
+        <obo:NCIT_NHC0>C96587</obo:NCIT_NHC0>
+        <obo:IAO_0000115>A male relative who is a sibling of either of the biological parents, and who share a common ancestor.</obo:IAO_0000115>
+        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C100130"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C61410"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C66830"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ncit.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_C96655 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C96655">
+        <rdfs:label>Half-brother with Father as Common Parent</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C71402"/>
+        <obo:NCIT_P207>C3272935</obo:NCIT_P207>
+        <obo:NCIT_P108>Half-brother with Father as Common Parent</obo:NCIT_P108>
+        <obo:NCIT_P106>Human</obo:NCIT_P106>
+        <oboInOwl:hasExactSynonym>Half-brother with Father as Common Parent</oboInOwl:hasExactSynonym>
+        <obo:NCIT_NHC0>C96655</obo:NCIT_NHC0>
+        <obo:NCIT_P325>A male who shares with his sibling the genetic makeup inherited from only the biological father.</obo:NCIT_P325>
+        <obo:NCIT_P322>CDISC</obo:NCIT_P322>
+        <obo:IAO_0000115>A male sibling who shares the genetic makeup inherited from only the biological father.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym>BROTHER, BIOLOGICAL PATERNAL HALF</oboInOwl:hasExactSynonym>
+        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C100130"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C61410"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C66830"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ncit.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_C96656 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C96656">
+        <rdfs:label>Half-brother with Mother as Common Parent</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C71402"/>
+        <obo:NCIT_NHC0>C96656</obo:NCIT_NHC0>
+        <oboInOwl:hasExactSynonym>BROTHER, BIOLOGICAL MATERNAL HALF</oboInOwl:hasExactSynonym>
+        <obo:NCIT_P106>Human</obo:NCIT_P106>
+        <oboInOwl:hasExactSynonym>Half-brother with Mother as Common Parent</oboInOwl:hasExactSynonym>
+        <obo:IAO_0000115>A male sibling who shares the genetic makeup inherited from only the biological mother.</obo:IAO_0000115>
+        <obo:NCIT_P207>C3272936</obo:NCIT_P207>
+        <obo:NCIT_P322>CDISC</obo:NCIT_P322>
+        <obo:NCIT_P108>Half-brother with Mother as Common Parent</obo:NCIT_P108>
+        <obo:NCIT_P325>A male who shares with his sibling the genetic makeup inherited from only the biological mother.</obo:NCIT_P325>
+        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C100130"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C61410"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C66830"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ncit.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_C96657 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C96657">
+        <rdfs:label>Half-sister with Father as Common Parent</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C71403"/>
+        <oboInOwl:hasExactSynonym>SISTER, BIOLOGICAL PATERNAL HALF</oboInOwl:hasExactSynonym>
+        <obo:NCIT_P108>Half-sister with Father as Common Parent</obo:NCIT_P108>
+        <obo:NCIT_P207>C3272937</obo:NCIT_P207>
+        <obo:NCIT_P322>CDISC</obo:NCIT_P322>
+        <obo:NCIT_P106>Human</obo:NCIT_P106>
+        <obo:IAO_0000115>A female sibling who shares the genetic makeup inherited from only the biological father.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym>Half-sister with Father as Common Parent</oboInOwl:hasExactSynonym>
+        <obo:NCIT_P325>A female who shares with her sibling the genetic makeup inherited from only the biological father.</obo:NCIT_P325>
+        <obo:NCIT_NHC0>C96657</obo:NCIT_NHC0>
+        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C100130"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C61410"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C66830"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ncit.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_C96658 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C96658">
+        <rdfs:label>Half-sister with Mother as Common Parent</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C71403"/>
+        <oboInOwl:hasExactSynonym>Half-sister with Mother as Common Parent</oboInOwl:hasExactSynonym>
+        <obo:NCIT_P108>Half-sister with Mother as Common Parent</obo:NCIT_P108>
+        <obo:NCIT_P106>Human</obo:NCIT_P106>
+        <obo:NCIT_P322>CDISC</obo:NCIT_P322>
+        <obo:NCIT_P207>C3272938</obo:NCIT_P207>
+        <obo:NCIT_NHC0>C96658</obo:NCIT_NHC0>
+        <obo:IAO_0000115>A female sibling who shares the genetic makeup inherited from only the biological mother.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym>SISTER, BIOLOGICAL MATERNAL HALF</oboInOwl:hasExactSynonym>
+        <obo:NCIT_P325>A female who shares with her sibling the genetic makeup inherited from only the biological mother.</obo:NCIT_P325>
+        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C100130"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C61410"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C66830"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ncit.owl"/>
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 3.2.4.1806) http://owlapi.sourceforge.net -->
+
